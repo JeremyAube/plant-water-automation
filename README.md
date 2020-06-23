@@ -8,8 +8,8 @@ the summer. I will try to automate the process with microcontrollers, soil
 sensors and 5v water pumps.
 
 I am also increasingly interested in IoT and embedded programming. This project
-will serve as a way to learn the basics of electrnic circuts and embedded
-programming. I know basicaly nothing at the time of starting this project.
+will serve as a way to learn the basics of circuts and embedded programming. I 
+know basicaly nothing at the time of starting this project.
 
 ## Future
 
