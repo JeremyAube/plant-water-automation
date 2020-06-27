@@ -1,4 +1,0 @@
-idf_component_register(SRCS "main.c"
-                       INCLUDE_DIRS .
-                       REQUIRES mbedtls
-                       PRIV_REQUIRES console spiffs)
