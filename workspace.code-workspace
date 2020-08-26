@@ -1,0 +1,18 @@
+{
+	"folders": [
+		{
+			"path": "esp32"
+		},
+		{
+			"path": "server"
+		}
+	],
+	"settings": {
+		"files.associations": {
+			"*.tcc": "c",
+			"memory": "c",
+			"istream": "c",
+			"sstream": "c"
+		}
+	}
+}
