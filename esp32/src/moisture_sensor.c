@@ -1,13 +1,8 @@
-#include "freertos/FreeRTOS.h"
-#include "freertos/task.h"
 #include "driver/gpio.h"
 #include "driver/adc.h"
 #include "esp_log.h"
 #include "esp_adc_cal.h"
 #include "moisture_sensor.h"
-
-const float MaxValue = 3500;
-const float MinValue = 1200;
 
 struct MoistureSensor init_moisture_sensor(int adc_channel)
 {
@@ -23,15 +18,7 @@ struct MoistureSensor init_moisture_sensor(int adc_channel)
 	return moisture_sensor;
 }
 
-// This returns a humidity percentage based on adc raw value
-int get_percent(int raw_value)
-{
-	return (raw_value - MinValue) / MaxValue * 100;
-}
-
 uint32_t get_moisture(struct MoistureSensor *moisture_sensor)
 {
-	int value = adc1_get_raw(ADC1_GPIO34_CHANNEL);
-
-	return get_percent(value);
+	return adc1_get_raw(ADC1_GPIO34_CHANNEL);
 }
